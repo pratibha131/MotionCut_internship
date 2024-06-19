@@ -1,0 +1,222 @@
+body {
+    margin: 0px;
+    display: flex;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.div1, .div2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start; 
+}
+.div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+} 
+.sidebar {
+    height: 60vh;
+    width: 15%;
+    margin: 10vh 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img1, .img2, .img3, .img4 {
+    height: 10vh;
+}
+.img1 img, .img2 img, .img3 img, .img4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7%;
+    cursor: pointer;
+}
+.main-img {
+    height: 80vh;
+    width: 100%;
+    margin: 10vh 0 0 4vh;
+    display: flex;
+}
+.main-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4%;
+}
+.mrp:hover{
+    color: orangered;
+}
+.product, .product-price, .size, .buying-options {
+    margin-bottom: 20px;
+    margin-left: 20vh;
+}
+.size {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+p{
+    color: grey;
+}
+.size-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.size-header h4 {
+    margin: 0;
+}
+.size-header .size-guide {
+    margin-left: 30vh; 
+}
+.group1, .group2 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap; 
+    margin-left: 20vh;
+}
+.group2{
+    margin-top: 2vh;
+}
+.group1 button, .group2 button {
+    padding: 15% 30%; 
+    flex: 1; 
+    border-radius: 8px ;
+    border: 1px solid gray;
+    background: white;
+}
+.size-guide {
+    margin-left: auto;
+}
+.buying-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5vh;
+}
+.buying-options button {
+    margin-bottom: 10px; 
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%; 
+    border-radius: 8px;
+    color: white;
+    background: black;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+.group1 button.active, .group2 button.active {
+    background-color: #000;
+    color: #fff; 
+    border: 2px solid #000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .div1, .div2 {
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+    .sidebar {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main-img {
+        height: 60vh;
+        width: 100%;
+        margin: 5vh auto;
+    }
+    .product, .product-price, .size, .buying-options {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .size-header .size-guide {
+        margin-left: auto;
+    }
+    .group1, .group2 {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .group1 button, .group2 button {
+        width: 80%;
+        margin: 5px 0;
+    }
+    .buying-options button {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .div1, .div2 {
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+    .div1{
+        flex-direction: column;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: row;
+        order: 2;
+        margin-top: 5%;
+        justify-content:space-evenly;
+    }
+    .main-img {
+        height: 60vh;
+        width: 100%;
+        margin: 5vh auto;
+        margin: 0;
+    }
+    .main-img img{
+        border-radius: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+    .buying-options{
+        justify-items: center;
+        align-items: center;
+    }
+    .group1, .group2 {
+        flex-direction: row;
+        width: 80%;
+        align-items: center;
+        margin-left: 1%;
+    }
+    .group1 button, .group2 button {
+        padding: 5%; 
+    }
+    .buying-options button {
+        width: 80%;
+    }
+    .size-header {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .size-header .size-guide {
+        margin-left: 20px; 
+    }
+}
