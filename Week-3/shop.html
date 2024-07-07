@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Shop - Diesel Watches</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul class="nav__links nav__left">
+        <li><a href="#" class="logo">Diesel</a></li>
+        <li class="store"><a href="index.html">Store</a></li>
+        <li class="shop"><a href="shop.html">Shop</a></li>
+        <li class="Collection"><a href="#">Collection</a></li>
+      </ul>
+      <ul class="nav__links nav__right">
+        <li class="cart-icon" onclick="toggleCart()">
+          <a href="#">
+            <i class="ri-shopping-cart-line"></i>
+            <div id="cartCount" class="cart-count">0</div>
+          </a>
+        </li>
+        <li class="login"><a href="#">Login/Register</a></li>
+        <li class="Profile"><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="shop__grid">
+
+      <div class="shop__item">
+        <img src="assets/img1.jpg" alt="Watch 1">
+        <h3>Classic Black Watch</h3>
+        <p class="price">$199.99</p>
+        <button class="btn" onclick="addItemToCart('item1', 'Classic Black Watch', 199.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img2.jpg" alt="Watch 2">
+        <h3>Elegant Purple Timepiece</h3>
+        <p>$249.99</p>
+        <button class="btn" onclick="addItemToCart('item2', 'Elegant Purple Timepiece', 249.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img3.jpg" alt="Watch 3">
+        <h3>Sporty Chronograph</h3>
+        <p>$179.99</p>
+        <button class="btn" onclick="addItemToCart('item3', 'Sporty Chronograph', 179.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img2.jpg" alt="Watch 2">
+        <h3>Elegant Purple Timepiece</h3>
+        <p>$249.99</p>
+        <button class="btn" onclick="addItemToCart('item2', 'Elegant Purple Timepiece', 249.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img3.jpg" alt="Watch 3">
+        <h3>Sporty Chronograph</h3>
+        <p>$179.99</p>
+        <button class="btn" onclick="addItemToCart('item3', 'Sporty Chronograph', 179.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img2.jpg" alt="Watch 2">
+        <h3>Elegant Purple Timepiece</h3>
+        <p>$249.99</p>
+        <button class="btn" onclick="addItemToCart('item2', 'Elegant Purple Timepiece', 249.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img3.jpg" alt="Watch 3">
+        <h3>Sporty Chronograph</h3>
+        <p>$179.99</p>
+        <button class="btn" onclick="addItemToCart('item3', 'Sporty Chronograph', 179.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img2.jpg" alt="Watch 2">
+        <h3>Elegant Purple Timepiece</h3>
+        <p>$249.99</p>
+        <button class="btn" onclick="addItemToCart('item2', 'Elegant Purple Timepiece', 249.99)">Add to Cart</button>
+      </div>
+
+      <div class="shop__item">
+        <img src="assets/img3.jpg" alt="Watch 3">
+        <h3>Sporty Chronograph</h3>
+        <p>$179.99</p>
+        <button class="btn" onclick="addItemToCart('item3', 'Sporty Chronograph', 179.99)">Add to Cart</button>
+      </div>
+
+    
+    </div>
+    
+  </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
